@@ -161,7 +161,7 @@ Promise.all([kenny.save(), mark.save(), benny.save()])
     .catch(console.log.bind(console))
 
     app.get('/', function(req, res) {
-        res.send('x');
+        res.send('<p>działa?</p>');
     });
     
     const PORT = process.env.PORT || 3000;
