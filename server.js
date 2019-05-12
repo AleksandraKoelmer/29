@@ -160,12 +160,12 @@ Promise.all([kenny.save(), mark.save(), benny.save()])
     .then(findBennyAndRemove)
     .catch(console.log.bind(console))
 
-    app.get('/', function(req, res) {
-        res.send('<p>działa?</p>');
-    });
+app.get('/', function(req, res) {
+    res.send('<p>działa?</p>');
+});
     
-    const PORT = process.env.PORT || 3000;
-app.listen(PORT, '0.0.0.0', () => {
+const PORT = process.env.PORT || 3000;
+    app.listen(PORT, '0.0.0.0', () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
 
